@@ -1,0 +1,86 @@
+body {
+    background-image: url("images/BackgroundImage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.emblogo img {
+    max-width: 200px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.emblogo img:hover {
+    transform: scale(1.05);
+}
+
+.gitlinkcontent {
+    color: #fafae0;
+    text-decoration: none;
+    font-family: 'basic';
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -80px;
+    margin-right: 10px;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.gitlinkcontent:hover {
+    color: #bcdbfe;
+}
+
+.flag {
+    flex: 0 0 55%;
+    margin-left: 20px;
+}
+
+.flagimage {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.flagandoptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.options {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.option1,
+.option2 {
+    width: 100%;
+    min-height: 150px;
+    box-sizing: border-box;
+    border: 5px solid #fafae0;
+    color: #fafae0;
+    background-color: #bcdbfe;
+    font-family: 'chelsea market';
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.option1:hover,
+.option2:hover {
+    transform: scale(1.05);
+}
+
