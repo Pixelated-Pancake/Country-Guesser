@@ -84,3 +84,9 @@ body {
     transform: scale(1.05);
 }
 
+#feedback {
+    text-align: center;
+    font-size: 40px;
+    color: #fafae0;
+    font-family: 'chelsea market';
+}

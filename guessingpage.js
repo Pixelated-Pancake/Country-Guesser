@@ -109,9 +109,25 @@ function nextQuestion () {
 
     currentQuestion++;
 
+    if (currentQuestion >= questions.length) {
+        showResults();
+        return;
+    }
+
     questionAnswered = false;
     feedback.textContent = "";
     loadQuestion();
+}
+
+function showResults() {
+    document.querySelector(".flagandoptions").style.display = "none";
+
+    feedback.innerHTML = `
+        <h1>Quiz Completed!</h1>
+        <h2>Your Score: ${score}/${questions.length}</h2>
+        <p>Thanks for playing!</p>
+    `;
+
 }
 
 option1.addEventListener("click", function() {
